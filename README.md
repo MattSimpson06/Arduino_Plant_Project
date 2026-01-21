@@ -64,5 +64,5 @@ The graph displays moisture voltage over time and clearly reflects wet vs. dry s
 
 ## Author
 Matthew Simpson
-Electrical & Software Engineering Student
+ElectricalEngineering Student
 York University
