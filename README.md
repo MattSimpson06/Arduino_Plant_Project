@@ -36,13 +36,27 @@ Overall, this project demonstrates practical experience with embedded control sy
 
 
 
-## Core Classes and Responsibilities
-- SensorPeriodicSample         | Periodically reads soil moisture, converts raw analog values to voltage
-- StateMachinePlantWatering    |  Implements watering logic and pump activation timing
-- GraphPeriodicUpdate	         |  Updates the real-time moisture chart
-- Board	                       |  Centralized system constants (pins, thresholds, timing)
-- Main                         |  System entry point and task scheduling
-- PlantsystemTest	             |  Unit tests for sensor scaling, thresholds, and graph updates
+## Core Classes
+
+The system is designed using a modular architecture where each class handles a specific responsibility related to sensor sampling, control logic, and data visualization.
+
+- **SensorPeriodicSample**  
+  Periodically reads soil moisture sensor data and converts raw analog values into voltage measurements for processing.
+
+- **StateMachinePlantWatering**  
+  Implements the watering state machine, controlling pump activation timing based on soil moisture thresholds.
+
+- **GraphPeriodicUpdate**  
+  Updates the real-time soil moisture chart, ensuring continuous visualization of sensor data.
+
+- **Board**  
+  Centralizes system configuration constants, including pin assignments, moisture thresholds, and timing parameters.
+
+- **Main**  
+  Serves as the system entry point, initializing components and scheduling periodic tasks.
+
+- **PlantsystemTest**  
+  Contains unit tests that verify sensor scaling accuracy, moisture threshold logic, and graph update behavior.
 
 
 
