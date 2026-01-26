@@ -58,7 +58,20 @@ The system is designed using a modular architecture where each class handles a s
 - **PlantsystemTest**  
   Contains unit tests that verify sensor scaling accuracy, moisture threshold logic, and graph update behavior.
 
+## How It Works
+The automated plant watering system monitors soil moisture in real time and activates a water pump only when the plant is determined to be dry.
+1. **Sensor Sampling**
+- A soil moisture sensor connected to the Arduino is sampled periodically. Raw analog readings are converted into voltage values that represent the soil’s moisture level.
+2. **State-Based Control Logic**
+- The system evaluates the current moisture voltage against predefined thresholds:
+- If the soil is very dry, the pump activates for a longer duration.
+- If the soil is moderately dry, the pump activates briefly.
+- If the soil is sufficiently moist, the pump remains off.
 
+3. **Real-Time Visualization**
+- Moisture values are continuously plotted on a real-time chart using JFreeChart. This allows users to visually observe soil conditions and system responses over time.
+4. **Event-Driven Scheduling**
+- Java TimerTasks are used to schedule sensor sampling, pump control logic, and graph updates. These tasks run at fixed intervals, simulating real-time, event-driven system behavior.
 
 ## Data Visualization
 Soil moisture data is plotted in real time using JFreeChart (XYSeries).
