@@ -78,6 +78,7 @@ Soil moisture data is plotted in real time using JFreeChart (XYSeries).
 The graph displays moisture voltage over time and clearly reflects wet vs. dry soil conditions as watering events occur. Peaks and drops correspond directly to sensor interaction and pump activation
 
 ## Screenshots
+![Plant Moisture Graph](Screenshots/Plant_Moisture_Graph.png)
 
 
 
